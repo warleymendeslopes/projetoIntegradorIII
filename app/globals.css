@@ -17,13 +17,61 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background: #F5F6FA;
+}
+
+.title-logo{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.menu-lateral {
+  background: white;
+  color: black;
+  box-shadow: 0 0px 47px rgb(0 0 0 / 15%);
+}
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255);
+  background: #4880FF;
+  width: 84%;
+  margin-left: 23px;
+  border-radius: 6px;
+  position: relative;
+}
+.text-black::before {
+  content: ' ';
+  color: #4980ff;
+  position: absolute;
+  background: #4980ff;
+  height: 100%;
+  top: 0;
+  width: 7px;
+  left: -13%;
+  border-radius: 8px;
+}
+.button-new-documet-desk{
+  top: 0;
+  right: 0;
+}
+.button-new-documet-mob{
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+}
+.row-content-dash{
+  background: #ffffff;
+  box-shadow: 0 0px 47px rgb(0 0 0 / 7%);
+}
+.container-login {
+  background: #ffffff;
+  box-shadow: 0 0px 47px rgb(0 0 0 / 15%);
+}
+.content-login-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 @layer utilities {
